@@ -1,0 +1,111 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Applies dark mode before the page is drawn, so there is no white flash -->
+<script>try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}</script>
+<style>html{background:#fdfdfb;color:#141414}html.dark{background:#0f0f0f;color:#ececec;color-scheme:dark}</style>
+<title>Gallery — Shivam Shukla</title>
+<meta name="description" content="Art gallery of Shivam Shukla — painting, drawing, sculpture, photography, mixed media, and digital art.">
+<link rel="stylesheet" href="css/style.css?v=20261028a">
+</head>
+<body>
+
+<div class="topbar">
+  <span>&ldquo;You are the world and the world is you&rdquo;</span>
+  <button class="theme-btn" aria-label="Toggle dark mode"></button>
+</div>
+
+<div class="wordmark"><a href="index.html">Shivam Shukla</a></div>
+
+<button class="menu-btn" aria-label="Open menu">Menu</button>
+<nav class="main">
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a class="here" href="gallery.html">Gallery</a>
+  <a href="publications.html">Publications</a>
+  <a href="service.html">Service</a>
+  <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="section-head reveal">
+  <h2>Art Gallery</h2>
+  <p>Beyond research, I find expression through various artistic mediums</p>
+</div>
+
+<!-- ======================= ARTWORKS =======================
+     TO ADD AN ARTWORK:
+     1. Put the image file in the images/gallery/ folder
+     2. Copy one <figure class="g-item"> block below and paste it where you want it
+     3. Change the image file name after src= and describe the image after alt=
+     Optional caption in the fullscreen viewer: add data-title="Title" data-meta="Medium · Year"
+     to the <figure> tag. The fullscreen viewer picks up new artworks automatically. -->
+<div class="wrap wide">
+  <div class="masonry reveal">
+
+    <figure class="g-item">
+      <img src="images/gallery/art-01.jpg" alt="Framed ink portrait of a face with a red bindi, hung on a white wall" width="1333" height="2000" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-02.jpg" alt="Charcoal artwork on canvas of figures, faces and flowers intertwined" width="2000" height="1500" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-03.jpg" alt="Digital abstract artwork with sweeping arcs of orange, violet and blue over black and white brushwork" width="886" height="886" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-04.jpg" alt="Oil painting of a woman with closed eyes, leaning against a wall" width="2000" height="1500" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-05.jpg" alt="Open sketchbook with two ink drawings of figures, resting on logs" width="2000" height="1276" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-06.jpg" alt="Digital mandala in gradients of gold, pink and violet on black" width="886" height="886" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-07.jpg" alt="Charcoal drawing of an expressive face, displayed on a dark wall in angled light" width="2000" height="1500" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-08.jpg" alt="Geometric ink mandala on a sketchpad beside pencils, a ruler and a compass" width="2000" height="1500" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-09.jpg" alt="Open sketchbook with ink drawings of a figure and a tree-like woman" width="2000" height="846" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-10.jpg" alt="Black and white abstract painting of flowing, petal-like forms" width="2000" height="1428" loading="lazy">
+    </figure>
+
+    <figure class="g-item">
+      <img src="images/gallery/art-11.jpg" alt="Ink drawing of a bearded face surrounded by sweeping, windblown strands" width="745" height="1012" loading="lazy">
+    </figure>
+
+  </div>
+</div>
+
+<!-- ======================= LIGHTBOX (fullscreen viewer, do not edit) ======================= -->
+<div class="lightbox" role="dialog" aria-label="Artwork viewer">
+  <button class="lb-close" aria-label="Close">✕</button>
+  <button class="lb-prev" aria-label="Previous">‹</button>
+  <img src="" alt="Artwork enlarged">
+  <div class="cap"><h3></h3><p></p><span class="lb-count"></span></div>
+  <button class="lb-next" aria-label="Next">›</button>
+</div>
+
+<footer class="site">
+  <span>&copy; 2026 Shivam Shukla · All rights reserved</span>
+  <span>Santa Clara, California, U.S.</span>
+</footer>
+
+<script src="js/main.js?v=20261028a"></script>
+</body>
+</html>

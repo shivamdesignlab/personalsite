@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Applies dark mode before the page is drawn, so there is no white flash -->
+<script>try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}</script>
+<style>html{background:#fdfdfb;color:#141414}html.dark{background:#0f0f0f;color:#ececec;color-scheme:dark}</style>
+<title>About | Shivam Shukla</title>
+<meta name="description" content="About Shivam Shukla, PhD student in Computational Media at UC Santa Cruz, researching HCI, AI, psychological well-being, art, and education.">
+<link rel="stylesheet" href="css/style.css?v=20261028a">
+</head>
+<body>
+
+<div class="topbar">
+  <span>&ldquo;You are the world and the world is you&rdquo;</span>
+  <button class="theme-btn" aria-label="Toggle dark mode"></button>
+</div>
+
+<div class="wordmark"><a href="index.html">Shivam Shukla</a></div>
+
+<button class="menu-btn" aria-label="Open menu">Menu</button>
+<nav class="main">
+  <a class="here" href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="publications.html">Publications</a>
+  <a href="service.html">Service</a>
+  <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ======================= ABOUT ME ======================= -->
+<div class="wrap">
+  <div class="about-grid reveal">
+    <!-- Photo: replace images/portrait.jpg to change it -->
+    <img src="images/portrait.jpg" alt="Black and white portrait of Shivam Shukla">
+    <div class="bio">
+      <h2>Hi! I am Shivam.</h2>
+      <p class="aka">Pronouns: He/Him &nbsp;·&nbsp; I also go by Sam</p>
+      <p>
+        I am a first-year PhD student in Computational Media at the University of California, Santa Cruz,
+        advised by <strong>Prof. Magy Seif El-Nasr</strong>. Before starting my PhD, I worked as a <strong>Research Scientist</strong> in the
+        <strong>Game User Interaction and Intelligence (GUII) Lab</strong>. My research interests lie at the
+        intersection of human-computer interaction, artificial intelligence, psychological well-being, art,
+        and education. I use mixed-methods approaches to explore my research questions, with a particular
+        affinity for qualitative and participatory research. I find that these approaches bring me closer to
+        people's lived experiences, helping me better understand the human side of the problems I study.
+      </p>
+      <p>
+        Beyond research, I am a self-taught artist who enjoys painting, sketching, and creating digital art.
+        You can explore some of my creative work in the <a href="gallery.html"><strong>gallery</strong></a>. I also enjoy
+        mixing music on my DJ deck, practicing yoga, and going on long, peaceful walks.
+      </p>
+      <p>
+        I love doing research, and I've been fortunate to meet and learn from some wonderful people and
+        amazing researchers along the way. As a first-generation student, I've experienced firsthand how much
+        a little guidance and support can mean. I hope to extend that same generosity to others. If you'd like
+        to talk about research, exchange ideas, or simply seek advice that I might be able to offer, feel free
+        to <a href="https://calendly.com/sshukla3-ucsc/30min" target="_blank" rel="noopener"><strong>schedule a chat with me</strong></a>. I'd be happy to connect!
+      </p>
+    </div>
+  </div>
+</div>
+
+<!-- ======================= CONTRIBUTIONS =======================
+     Each contribution = one <article class="contrib"> block.
+     Links at the bottom open the paper in a new tab. -->
+<div class="section-head reveal">
+  <h2>Contributions</h2>
+</div>
+
+<div class="wrap-narrow reveal" style="text-align:center; padding-bottom:2.6rem;">
+  <p>
+    Through my research, I've had the opportunity to work with different communities and groups, understand the
+    challenges they face, and explore how human-centered research can make a difference. Here are some of
+    the contributions I have made in human-centered research across various disciplines.
+  </p>
+</div>
+
+<div class="wrap">
+  <div class="contribs reveal">
+
+    <article class="contrib">
+      <h3>Human-Centered AI for Space Exploration</h3>
+      <p>
+        Developed six design guidelines for utilizing AI in space mission planning and execution tools,
+        along with two proposed research directions to support crew autonomy during long-duration exploration
+        missions. This work was accepted at <strong>SpaceCHI 2026</strong> and presented at
+        <strong>NASA Ames Research Center</strong> in September 2026.
+      </p>
+      <div class="links"><span class="status">Under Print</span></div>
+    </article>
+
+    <article class="contrib">
+      <h3>Relationship-Centered Design for Mental Health AI</h3>
+      <p>
+        Introduced the concept of <strong>Relational Displacement</strong> in the context of Digital Therapeutic
+        Alliance (DTA), examining how AI-based therapeutic tools might affect users' relationships by providing
+        the appearance of connection. Building on this idea, I proposed a relationship-centered approach for
+        designing mental health AI tools. This work was presented at <strong>CHI 2026</strong> in <strong>Barcelona, Spain</strong>.
+      </p>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/2603.18375" target="_blank" rel="noopener">View Paper</a>
+      </div>
+    </article>
+
+    <article class="contrib">
+      <h3>Measuring Relational Orientation in Large Language Models</h3>
+      <p>
+        Proposed <strong>Relational Orientation</strong> as a way to study how LLMs shape users' relationships with AI
+        and other human-connections during emotionally supportive interactions. Developed an evaluation framework to
+        measure these relational tendencies, with the broader goal of informing AI design that supports
+        long-term psychological well-being. The paper is currently under review.
+      </p>
+      <div class="links">
+        <a href="https://arxiv.org/pdf/2610.09569" target="_blank" rel="noopener">View Preprint</a>
+      </div>
+    </article>
+
+    <article class="contrib">
+      <h3>Understanding Collaborative Learning in Multiplayer Games</h3>
+      <p>
+        Developed a discourse-centered, triangulated methodology to study how players learn and collaborate in
+        a multiplayer educational wildfire preparedness game. This approach brings together different forms of evidence to better understand
+        collaborative learning as it unfolds during gameplay. The research was accepted at
+        <strong>JCSG 2025</strong> and <strong>FDG 2026</strong>, and presented at <strong>FDG 2026</strong> in <strong>Copenhagen, Denmark</strong>.
+      </p>
+      <div class="links">
+        <a href="https://dl.acm.org/doi/pdf/10.1145/3815598.3815644" target="_blank" rel="noopener">View Paper 1</a>
+        <a href="https://link.springer.com/chapter/10.1007/978-3-032-10518-9_11" target="_blank" rel="noopener">View Paper 2</a>
+      </div>
+    </article>
+
+  </div>
+</div>
+
+<!-- ======================= RESEARCH QUESTIONS ======================= -->
+<div class="section-head reveal">
+  <h2>Research Questions I'm Currently Interested In</h2>
+</div>
+
+<ol class="q-list reveal">
+  <li>How can human-centered AI shape the future of crew-autonomous space mission planning?</li>
+  <li>What do patterns of social interaction in Massively Multiplayer Online Role-Playing Games (MMORPGs) reveal about player resilience and well-being?</li>
+  <li>How can we study the artificial intimacy/relatedness produced by LLMs in emotionally supportive contexts?</li>
+  <li>How can metaphysics help us understand and evaluate the quality of human-AI experiences?</li>
+</ol>
+
+<!-- ======================= PHILOSOPHY ======================= -->
+<div class="section-head reveal">
+  <h2>My Research &amp; Design Philosophy</h2>
+</div>
+
+<div class="wrap-narrow reveal" style="text-align:center;">
+  <p>
+    I believe that technology should be built with people, not just for them.
+    <strong>Co-creation, critical thinking, and care</strong> are the key components of my research
+    and design process. I love questioning assumptions, centering lived experience, and making space
+    for ambiguity and nuance, especially in spaces shaped by AI.
+  </p>
+  <a class="btn" href="contact.html">Get in Touch</a>
+  <!-- CV button: opens files/cv.pdf. Replace that file to update your CV. -->
+  <a class="btn" href="files/cv.pdf" target="_blank" rel="noopener">View CV</a>
+</div>
+
+<footer class="site">
+  <span>&copy; 2026 Shivam Shukla · All rights reserved</span>
+  <span>Santa Clara, California, U.S.</span>
+</footer>
+
+<script src="js/main.js?v=20261028a"></script>
+</body>
+</html>

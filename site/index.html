@@ -1,0 +1,166 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Applies dark mode before the page is drawn, so there is no white flash -->
+<script>try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}</script>
+<style>html{background:#fdfdfb;color:#141414}html.dark{background:#0f0f0f;color:#ececec;color-scheme:dark}</style>
+<title>Shivam Shukla — Researcher &amp; Artist</title>
+<meta name="description" content="Shivam Shukla — HCI &amp; AI researcher and artist exploring how people think, feel, and learn through computational artifacts.">
+<link rel="stylesheet" href="css/style.css?v=20261028a">
+</head>
+<body>
+
+<!-- ======================= HEADER (same on every page) ======================= -->
+<div class="topbar">
+  <span>&ldquo;You are the world and the world is you&rdquo;</span>
+  <button class="theme-btn" aria-label="Toggle dark mode"></button>
+</div>
+
+<div class="wordmark"><a href="index.html">Shivam Shukla</a></div>
+
+<button class="menu-btn" aria-label="Open menu">Menu</button>
+<nav class="main">
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="publications.html">Publications</a>
+  <a href="service.html">Service</a>
+  <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<!-- ======================= HERO STATEMENT ======================= -->
+<section class="hero reveal">
+  <p class="kicker">PhD&nbsp;Student · Computational&nbsp;Media · UC&nbsp;Santa&nbsp;Cruz</p>
+  <h1>
+    <span>My research explores how people</span>
+    <span class="accent">think, feel, and learn</span>
+    <span>through computational artifacts.</span>
+  </h1>
+  <div class="actions">
+    <a class="btn" href="projects.html">Explore Projects</a>
+    <a class="btn ghost" href="about.html">About Me</a>
+  </div>
+</section>
+
+<!-- ======================= NEWS =======================
+     Newest first. Each item = one <li>: the date, then the text. -->
+<section class="home-block">
+<div class="section-head reveal">
+  <h2>News</h2>
+</div>
+
+<div class="wrap">
+  <ul class="news reveal">
+    <li>
+      <span class="date">September 2026</span>
+      <p>I began my <strong>PhD</strong> in Computational Media at UCSC, working with Dr. Magy Seif El-Nasr in the <strong>Game User Interaction and Intelligence Lab.</strong></p>
+    </li>
+    <li>
+      <span class="date">September 2026</span>
+      <p>I delivered the oral presentation of our <strong>SpaceCHI</strong> paper at <strong>NASA Ames Research Center</strong>, sharing our work on human-centered AI for crew-autonomous space missions.</p>
+    </li>
+    <li>
+      <span class="date">August 2026</span>
+      <p>I presented our <strong>FDG &rsquo;26</strong> paper, &ldquo;Talking Wildfire: How Discourse in Serious Games Shapes Collaborative Learning and Preparedness,&rdquo; at the conference in <strong>Copenhagen, Denmark.</strong></p>
+    </li>
+    <li>
+      <span class="date">August 2026</span>
+      <p>Our paper, &ldquo;Designing for Mars: Human-Centered AI, Resilience, and the Future of Crew-Autonomous Space Mission Planning,&rdquo; was accepted to <strong>SpaceCHI</strong> and selected for an oral presentation. SpaceCHI is the world&rsquo;s first conference focused on advancing HCI for space exploration. (<a href="https://spacechi.media.mit.edu/" target="_blank" rel="noopener">SpaceCHI</a>)</p>
+    </li>
+    <li>
+      <span class="date">May 2026</span>
+      <p>Our paper, &ldquo;Exploring Indian International Students&rsquo; Experiences with LLMs,&rdquo; was accepted to the <strong>International Conference on Human-Computer Interaction (HCII &rsquo;26).</strong></p>
+    </li>
+    <li>
+      <span class="date">April 30, 2026</span>
+      <p><strong>&ldquo;The Sphinxes&rdquo;</strong> was featured in <strong>Forbes.</strong> I contributed to the project as an immersive artist and HCI researcher. (<a href="https://www.forbes.com/sites/andrewdeangelo/2026/04/30/the-post-prohibition-art-of-cannabis-and-psychedelics/" target="_blank" rel="noopener">Forbes</a>)</p>
+    </li>
+    <li>
+      <span class="date">April 2026</span>
+      <p>Our position paper, &ldquo;Relationship-Centered Care: Relatedness and Responsible Design for Human Connections in Mental-Health Care,&rdquo; was accepted to the <strong>Toward Relationship-Centered Care with AI</strong> workshop.</p>
+    </li>
+  </ul>
+</div>
+</section>
+
+<!-- ======================= PROJECTS ======================= -->
+<section class="home-block">
+<div class="section-head reveal">
+  <h2>Projects</h2>
+  <p>Serious Games · Space Exploration · Well&#8209;being · Community Research · Human-AI Experience</p>
+</div>
+
+<div class="wrap wide">
+  <!-- Each project = one <a class="post"> block: image, info line (number + venues),
+       title, short preview (first sentence of the overview), and "Read More". -->
+  <div class="posts reveal">
+
+    <a class="post" href="projects/wildfire.html">
+      <div class="thumb"><img src="images/projects/wildfire.jpg" alt="Painted illustration of a wildfire burning across the Hollywood hills" loading="lazy"></div>
+      <p class="meta"><span class="n">01</span>JCSG&rsquo;25 · FDG&rsquo;26</p>
+      <h3>Serious Games for Wildfire Preparedness</h3>
+      <p class="sub">In this project, we developed a discourse-centered, triangulated methodology to understand how player-to-player communication in serious games fosters collaborative learning, shared understanding, and collective action for real-world wildfire challenges.</p>
+      <p class="read"><span>Read More <i>&rarr;</i></span></p>
+    </a>
+
+    <a class="post" href="projects/space-mission.html">
+      <div class="thumb"><img src="images/projects/space-mission.jpg" alt="Painted illustration of an astronaut and a rover on a red planet" loading="lazy"></div>
+      <p class="meta"><span class="n">02</span>SpaceCHI&rsquo;26 · Under Print</p>
+      <h3>Human-centered AI for Crew-autonomous Space Mission Planning</h3>
+      <p class="sub">In this project, we explored how artificial intelligence can support astronaut planning, scheduling, and execution during long-duration space missions where communication delays reduce real-time support from Earth.</p>
+      <p class="read"><span>Read More <i>&rarr;</i></span></p>
+    </a>
+
+    <a class="post" href="projects/wellbeing.html">
+      <div class="thumb"><img src="images/projects/wellbeing.jpg" alt="Painted illustration of a robot gently comforting a person on sunlit ruins" loading="lazy"></div>
+      <p class="meta"><span class="n">03</span>CHI 2026 · Pre-print</p>
+      <h3>Psychological Well-being and Human-centered AI</h3>
+      <p class="sub">In these projects, my research group and I are investigating how AI systems designed to provide emotional and psychological support shape human relationships and the fundamental need for relatedness.</p>
+      <p class="read"><span>Read More <i>&rarr;</i></span></p>
+    </a>
+
+  </div>
+  <p class="more"><a class="btn" href="projects.html">All Projects</a></p>
+</div>
+</section>
+
+<hr class="rule-wide">
+
+<!-- ======================= GALLERY PREVIEW ======================= -->
+<section class="home-block">
+<div class="section-head reveal">
+  <h2>From the Gallery</h2>
+  <p>Painting · Drawing · Sculpture · Photography · Digital</p>
+</div>
+
+<div class="wrap wide">
+  <div class="art-row reveal">
+    <a class="tile" href="gallery.html">
+      <img src="images/gallery/art-01.jpg" alt="Framed ink portrait of a face with a red bindi, hung on a white wall" loading="lazy">
+      <div class="veil"><span>View Gallery</span></div>
+    </a>
+    <a class="tile" href="gallery.html">
+      <img src="images/gallery/art-04.jpg" alt="Oil painting of a woman with closed eyes, leaning against a wall" loading="lazy">
+      <div class="veil"><span>View Gallery</span></div>
+    </a>
+    <a class="tile" href="gallery.html">
+      <img src="images/gallery/art-03.jpg" alt="Digital abstract artwork with sweeping arcs of orange, violet and blue over black and white brushwork" loading="lazy">
+      <div class="veil"><span>View Gallery</span></div>
+    </a>
+  </div>
+  <p class="more"><a class="btn" href="gallery.html">View Full Gallery</a></p>
+</div>
+</section>
+
+<!-- ======================= FOOTER (same on every page) ======================= -->
+<footer class="site">
+  <span>&copy; 2026 Shivam Shukla · All rights reserved</span>
+  <span>Santa Clara, California, U.S.</span>
+</footer>
+
+<script src="js/main.js?v=20261028a"></script>
+</body>
+</html>

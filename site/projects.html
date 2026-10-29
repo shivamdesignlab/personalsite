@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<!-- Applies dark mode before the page is drawn, so there is no white flash -->
+<script>try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}</script>
+<style>html{background:#fdfdfb;color:#141414}html.dark{background:#0f0f0f;color:#ececec;color-scheme:dark}</style>
+<title>Projects | Shivam Shukla</title>
+<meta name="description" content="Research projects by Shivam Shukla: serious games, psychological well-being, human-AI experience, community research, learning, and space mission planning.">
+<link rel="stylesheet" href="css/style.css?v=20261028a">
+</head>
+<body>
+
+<div class="topbar">
+  <span>&ldquo;You are the world and the world is you&rdquo;</span>
+  <button class="theme-btn" aria-label="Toggle dark mode"></button>
+</div>
+
+<div class="wordmark"><a href="index.html">Shivam Shukla</a></div>
+
+<button class="menu-btn" aria-label="Open menu">Menu</button>
+<nav class="main">
+  <a href="about.html">About</a>
+  <a class="here" href="projects.html">Projects</a>
+  <a href="gallery.html">Gallery</a>
+  <a href="publications.html">Publications</a>
+  <a href="service.html">Service</a>
+  <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
+  <a href="contact.html">Contact</a>
+</nav>
+
+<div class="section-head reveal">
+  <h2>Projects</h2>
+  <p>Serious Games · Space Exploration · Well&#8209;being · Community Research · Human-AI Experience</p>
+</div>
+
+<!-- ======================= PROJECTS =======================
+     Each project = one <a class="card"> block (in document order).
+     chips  = the small labels on the image (venues / status)
+     h3     = project title
+     Image  = images/projects/<name>.jpg -->
+<div class="wrap wide">
+  <div class="cards reveal">
+
+    <a class="card" href="projects/wildfire.html">
+      <div class="media"><img src="images/projects/wildfire.jpg" alt="Painted illustration of a wildfire burning across the Hollywood hills" loading="lazy"></div>
+      <span class="num">01</span>
+      <div class="body">
+        <div class="chips"><span class="chip">JCSG&rsquo;25</span><span class="chip">FDG&rsquo;26</span></div>
+        <h3>Serious Games for Wildfire Preparedness</h3>
+        <span class="explore">Explore <i>&rarr;</i></span>
+      </div>
+    </a>
+
+    <a class="card" href="projects/space-mission.html">
+      <div class="media"><img src="images/projects/space-mission.jpg" alt="Painted illustration of an astronaut and a rover on a red planet" loading="lazy"></div>
+      <span class="num">02</span>
+      <div class="body">
+        <div class="chips"><span class="chip">SpaceCHI&rsquo;26</span><span class="chip">Under Print</span></div>
+        <h3>Human-centered AI for Crew-autonomous Space Mission Planning</h3>
+        <span class="explore">Explore <i>&rarr;</i></span>
+      </div>
+    </a>
+
+    <a class="card" href="projects/wellbeing.html">
+      <div class="media"><img src="images/projects/wellbeing.jpg" alt="Painted illustration of a robot gently comforting a person on sunlit ruins" loading="lazy"></div>
+      <span class="num">03</span>
+      <div class="body">
+        <div class="chips"><span class="chip">CHI 2026</span><span class="chip">Pre-print</span></div>
+        <h3>Psychological Well-being and Human-centered AI</h3>
+        <span class="explore">Explore <i>&rarr;</i></span>
+      </div>
+    </a>
+
+    <a class="card" href="projects/pdcs.html">
+      <div class="media"><img src="images/projects/pdcs.jpg" alt="Painted illustration of a hillside village with people walking along a stone path" loading="lazy"></div>
+      <span class="num">04</span>
+      <div class="body">
+        <div class="chips"><span class="chip">HCII&rsquo;26</span><span class="chip">Under Print</span></div>
+        <h3>Persona Driven Collaborative Storytelling (PDCS): Community Research</h3>
+        <span class="explore">Explore <i>&rarr;</i></span>
+      </div>
+    </a>
+
+    <a class="card" href="projects/metaphysics.html">
+      <div class="media"><img src="images/projects/metaphysics.jpg" alt="Painted illustration of a robot sitting beside a classical philosopher statue" loading="lazy"></div>
+      <span class="num">05</span>
+      <div class="body">
+        <div class="chips"><span class="chip soon">Coming Soon</span></div>
+        <h3>Reconceptualizing Human-AI Experience from a Metaphysical Perspective</h3>
+        <span class="explore">Preview <i>&rarr;</i></span>
+      </div>
+    </a>
+
+    <a class="card" href="projects/mmorpg.html">
+      <div class="media"><img src="images/projects/mmorpg.jpg" alt="Painted illustration of two children walking toward a castle in the clouds" loading="lazy"></div>
+      <span class="num">06</span>
+      <div class="body">
+        <div class="chips"><span class="chip soon">Coming Soon</span></div>
+        <h3>Player Experience and Well-being in Massively Multiplayer Online Role-Playing Games (MMORPGs)</h3>
+        <span class="explore">Preview <i>&rarr;</i></span>
+      </div>
+    </a>
+
+  </div>
+</div>
+
+<footer class="site">
+  <span>&copy; 2026 Shivam Shukla · All rights reserved</span>
+  <span>Santa Clara, California, U.S.</span>
+</footer>
+
+<script src="js/main.js?v=20261028a"></script>
+</body>
+</html>
