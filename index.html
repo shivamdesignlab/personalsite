@@ -3,246 +3,164 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Shivam Shukla — About</title>
-<meta name="description" content="Shivam Shukla — HCI & AI researcher exploring how people think, feel, and learn through computational artifacts.">
-<link rel="preconnect" href="https://fonts.googleapis.com">
-<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-<link href="https://fonts.googleapis.com/css2?family=Caveat:wght@400;600;700&family=EB+Garamond:ital,wght@0,400;0,500;1,400&display=swap" rel="stylesheet">
-<link rel="stylesheet" href="css/style.css">
+<!-- Applies dark mode before the page is drawn, so there is no white flash -->
+<script>try{if(localStorage.getItem('theme')==='dark'){document.documentElement.classList.add('dark');}}catch(e){}</script>
+<style>html{background:#fdfdfb;color:#141414}html.dark{background:#0f0f0f;color:#ececec;color-scheme:dark}</style>
+<title>Shivam Shukla — Researcher &amp; Artist</title>
+<meta name="description" content="Shivam Shukla — HCI &amp; AI researcher and artist exploring how people think, feel, and learn through computational artifacts.">
+<link rel="stylesheet" href="css/style.css?v=20261028a">
 </head>
 <body>
 
-<div class="ribbon">&ldquo;You are the world and the world is you&rdquo;</div>
+<!-- ======================= HEADER (same on every page) ======================= -->
+<div class="topbar">
+  <span>&ldquo;You are the world and the world is you&rdquo;</span>
+  <button class="theme-btn" aria-label="Toggle dark mode"></button>
+</div>
 
-<header class="site">
-  <div class="name"><a href="index.html">Shivam Shukla</a></div>
-</header>
+<div class="wordmark"><a href="index.html">Shivam Shukla</a></div>
 
-<svg class="divider" viewBox="0 0 320 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-  <path d="M4 12 Q 40 4, 80 11 T 160 10 T 240 12 T 316 8" stroke="#38302a" fill="none" stroke-width="2" stroke-linecap="round"/>
-</svg>
-
-<nav class="site">
-  <a href="index.html">About</a>
-  <a href="research.html">Research</a>
-  <a href="work.html">Selected Work</a>
+<button class="menu-btn" aria-label="Open menu">Menu</button>
+<nav class="main">
+  <a href="about.html">About</a>
+  <a href="projects.html">Projects</a>
   <a href="gallery.html">Gallery</a>
   <a href="publications.html">Publications</a>
+  <a href="service.html">Service</a>
+  <a href="files/cv.pdf" target="_blank" rel="noopener">CV</a>
   <a href="contact.html">Contact</a>
 </nav>
 
-<main class="wrap">
+<!-- ======================= HERO STATEMENT ======================= -->
+<section class="hero reveal">
+  <p class="kicker">PhD&nbsp;Student · Computational&nbsp;Media · UC&nbsp;Santa&nbsp;Cruz</p>
+  <h1>
+    <span>My research explores how people</span>
+    <span class="accent">think, feel, and learn</span>
+    <span>through computational artifacts.</span>
+  </h1>
+  <div class="actions">
+    <a class="btn" href="projects.html">Explore Projects</a>
+    <a class="btn ghost" href="about.html">About Me</a>
+  </div>
+</section>
 
-  <!-- ============ HERO ============ -->
-  <section class="hero">
-    <div class="hero-grid">
-      <div>
-        <span class="kicker">Hi! I am Shivam.</span>
-        <p class="big-thought">My research explores how people think, feel, and learn through computational artifacts.</p>
-        <p class="lede">
-          I am a Research Associate at the <strong>Game User Interaction and Intelligence (GUII) Lab</strong>,
-          led by Prof. Magy Seif El-Nasr. My research interests sit at the intersection of
-          human&ndash;computer interaction, artificial intelligence (HCAI), psychological well-being,
-          and metacognition. I have 4+ years of experience in mixed-methods research and product design.
-        </p>
-        <p class="lede">
-          I am grateful for all the support I have received throughout my journey. If you would like to
-          talk about research or are looking for any advice I can offer, feel free to
-          <a href="contact.html">schedule a chat with me</a>.
-        </p>
-      </div>
+<!-- ======================= NEWS =======================
+     Newest first. Each item = one <li>: the date, then the text. -->
+<section class="home-block">
+<div class="section-head reveal">
+  <h2>News</h2>
+</div>
 
-      <figure class="hero-art">
-        <!-- Ink-line illustration: a boy and a small friend watching the stars -->
-        <svg viewBox="0 0 340 300" width="100%" xmlns="http://www.w3.org/2000/svg" role="img" aria-label="Ink drawing of a boy and a small animal friend sitting on a hill under the stars">
-          <g stroke="#38302a" fill="none" stroke-width="2.4" stroke-linecap="round">
-            <!-- hill -->
-            <path d="M8 262 Q 90 218, 170 232 Q 258 246, 332 224"/>
-            <!-- little tree -->
-            <path d="M52 236 Q 50 205, 54 190"/>
-            <path d="M54 190 Q 34 178, 38 158 Q 40 138, 60 140 Q 62 120, 82 126 Q 98 128, 94 150 Q 108 158, 96 174 Q 92 188, 74 186 Q 62 196, 54 190 Z"/>
-            <!-- boy sitting -->
-            <circle cx="208" cy="192" r="12"/>
-            <path d="M204 204 Q 194 220, 198 236 Q 210 240, 224 236"/>
-            <path d="M200 214 Q 214 210, 222 218"/>
-            <!-- small friend -->
-            <circle cx="246" cy="216" r="8"/>
-            <path d="M242 209 l -3 -6 M 250 209 l 3 -6"/>
-            <path d="M240 223 Q 238 234, 246 236 Q 254 236, 254 228"/>
-            <!-- crescent moon -->
-            <path d="M282 62 A 24 24 0 1 0 296 100 A 19 19 0 1 1 282 62 Z"/>
-          </g>
-          <g stroke="#b98a2e" fill="none" stroke-width="2" stroke-linecap="round">
-            <!-- stars -->
-            <path d="M96 66 v 12 M 90 72 h 12"/>
-            <path d="M170 40 v 10 M 165 45 h 10"/>
-            <path d="M226 92 v 10 M 221 97 h 10"/>
-            <path d="M136 110 v 8 M 132 114 h 8"/>
-            <path d="M60 108 v 8 M 56 112 h 8"/>
-          </g>
-        </svg>
-        <figcaption>&ldquo;look how far we&rsquo;ve come&rdquo;</figcaption>
-      </figure>
-    </div>
-  </section>
+<div class="wrap">
+  <ul class="news reveal">
+    <li>
+      <span class="date">September 2026</span>
+      <p>I began my <strong>PhD</strong> in Computational Media at UCSC, working with Dr. Magy Seif El-Nasr in the <strong>Game User Interaction and Intelligence Lab.</strong></p>
+    </li>
+    <li>
+      <span class="date">September 2026</span>
+      <p>I delivered the oral presentation of our <strong>SpaceCHI</strong> paper at <strong>NASA Ames Research Center</strong>, sharing our work on human-centered AI for crew-autonomous space missions.</p>
+    </li>
+    <li>
+      <span class="date">August 2026</span>
+      <p>I presented our <strong>FDG &rsquo;26</strong> paper, &ldquo;Talking Wildfire: How Discourse in Serious Games Shapes Collaborative Learning and Preparedness,&rdquo; at the conference in <strong>Copenhagen, Denmark.</strong></p>
+    </li>
+    <li>
+      <span class="date">August 2026</span>
+      <p>Our paper, &ldquo;Designing for Mars: Human-Centered AI, Resilience, and the Future of Crew-Autonomous Space Mission Planning,&rdquo; was accepted to <strong>SpaceCHI</strong> and selected for an oral presentation. SpaceCHI is the world&rsquo;s first conference focused on advancing HCI for space exploration. (<a href="https://spacechi.media.mit.edu/" target="_blank" rel="noopener">SpaceCHI</a>)</p>
+    </li>
+    <li>
+      <span class="date">May 2026</span>
+      <p>Our paper, &ldquo;Exploring Indian International Students&rsquo; Experiences with LLMs,&rdquo; was accepted to the <strong>International Conference on Human-Computer Interaction (HCII &rsquo;26).</strong></p>
+    </li>
+    <li>
+      <span class="date">April 30, 2026</span>
+      <p><strong>&ldquo;The Sphinxes&rdquo;</strong> was featured in <strong>Forbes.</strong> I contributed to the project as an immersive artist and HCI researcher. (<a href="https://www.forbes.com/sites/andrewdeangelo/2026/04/30/the-post-prohibition-art-of-cannabis-and-psychedelics/" target="_blank" rel="noopener">Forbes</a>)</p>
+    </li>
+    <li>
+      <span class="date">April 2026</span>
+      <p>Our position paper, &ldquo;Relationship-Centered Care: Relatedness and Responsible Design for Human Connections in Mental-Health Care,&rdquo; was accepted to the <strong>Toward Relationship-Centered Care with AI</strong> workshop.</p>
+    </li>
+  </ul>
+</div>
+</section>
 
-  <!-- ============ RESEARCH QUESTIONS ============ -->
-  <section>
-    <span class="kicker">research questions I am interested in</span>
-    <h2>The questions I carry with me</h2>
-    <ul class="q-list">
-      <li>How could Human-Centered design approaches shape the future of space missions?</li>
-      <li>What do patterns of social interaction in games reveal about player well-being?</li>
-      <li>How does AI-enabled embodied and multimodal interaction shape mental health?</li>
-      <li>How can metaphysics help us understand and evaluate the quality of human&ndash;AI experience?</li>
-    </ul>
-  </section>
+<!-- ======================= PROJECTS ======================= -->
+<section class="home-block">
+<div class="section-head reveal">
+  <h2>Projects</h2>
+  <p>Serious Games · Space Exploration · Well&#8209;being · Community Research · Human-AI Experience</p>
+</div>
 
-  <p class="quote">&ldquo;What do you want to be when you grow up?&rdquo;<br>&ldquo;Kind,&rdquo; said the boy.
-    <span class="who">&mdash; Charlie Mackesy, the book behind this site&rsquo;s spirit</span>
-  </p>
+<div class="wrap wide">
+  <!-- Each project = one <a class="post"> block: image, info line (number + venues),
+       title, short preview (first sentence of the overview), and "Read More". -->
+  <div class="posts reveal">
 
-  <!-- ============ CURRENT PROJECTS ============ -->
-  <section>
-    <span class="kicker">research focus: metacognition, MMOs &amp; emotion regulation, HCAI, embodied &amp; multimodal interaction</span>
-    <h2>Current Projects</h2>
-    <div class="card-grid">
+    <a class="post" href="projects/wildfire.html">
+      <div class="thumb"><img src="images/projects/wildfire.jpg" alt="Painted illustration of a wildfire burning across the Hollywood hills" loading="lazy"></div>
+      <p class="meta"><span class="n">01</span>JCSG&rsquo;25 · FDG&rsquo;26</p>
+      <h3>Serious Games for Wildfire Preparedness</h3>
+      <p class="sub">In this project, we developed a discourse-centered, triangulated methodology to understand how player-to-player communication in serious games fosters collaborative learning, shared understanding, and collective action for real-world wildfire challenges.</p>
+      <p class="read"><span>Read More <i>&rarr;</i></span></p>
+    </a>
 
-      <article class="card">
-        <svg class="art" viewBox="0 0 120 80" width="110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#38302a" fill="none" stroke-width="2.2" stroke-linecap="round">
-            <path d="M6 70 Q 60 56, 114 68"/>
-            <path d="M38 64 L 38 42 M 30 52 L 38 40 L 46 52 M 32 44 L 38 33 L 44 44"/>
-            <path d="M78 66 L 78 48 M 71 56 L 78 45 L 85 56"/>
-          </g>
-          <path d="M58 30 Q 54 20, 60 12 Q 62 20, 66 22 Q 68 14, 72 20 Q 74 28, 66 32 Q 60 34, 58 30 Z" stroke="#c98d7a" fill="none" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <div class="tags"><span class="tag">serious games</span><span class="tag">collaborative learning</span></div>
-        <h3>How Discourse in Serious Games Shapes Collaborative Learning and Wildfire Preparedness</h3>
-        <p>How serious games can foster resilience, decision-making skills, and knowledge transfer in wildfire scenarios.</p>
-        <a class="go" href="projects/wildfire.html">learn more &rarr;</a>
-      </article>
+    <a class="post" href="projects/space-mission.html">
+      <div class="thumb"><img src="images/projects/space-mission.jpg" alt="Painted illustration of an astronaut and a rover on a red planet" loading="lazy"></div>
+      <p class="meta"><span class="n">02</span>SpaceCHI&rsquo;26 · Under Print</p>
+      <h3>Human-centered AI for Crew-autonomous Space Mission Planning</h3>
+      <p class="sub">In this project, we explored how artificial intelligence can support astronaut planning, scheduling, and execution during long-duration space missions where communication delays reduce real-time support from Earth.</p>
+      <p class="read"><span>Read More <i>&rarr;</i></span></p>
+    </a>
 
-      <article class="card">
-        <svg class="art" viewBox="0 0 120 80" width="110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#38302a" fill="none" stroke-width="2.2" stroke-linecap="round">
-            <path d="M60 66 Q 28 44, 34 26 Q 38 12, 54 18 Q 60 21, 60 28 Q 60 21, 66 18 Q 82 12, 86 26 Q 92 44, 60 66 Z"/>
-          </g>
-          <g stroke="#92a084" fill="none" stroke-width="2" stroke-linecap="round">
-            <path d="M60 40 Q 60 30, 66 26 M 60 40 Q 58 32, 52 30"/>
-          </g>
-        </svg>
-        <div class="tags"><span class="tag">MMOs</span><span class="tag">emotion regulation</span><span class="tag soon">coming soon</span></div>
-        <h3>Psychological Well-being</h3>
-        <p>How MMOs like Sky address mental well-being, and the role of embodied and multimodal interaction in mental health.</p>
-        <a class="go" href="projects/wellbeing.html">learn more &rarr;</a>
-      </article>
+    <a class="post" href="projects/wellbeing.html">
+      <div class="thumb"><img src="images/projects/wellbeing.jpg" alt="Painted illustration of a robot gently comforting a person on sunlit ruins" loading="lazy"></div>
+      <p class="meta"><span class="n">03</span>CHI 2026 · Pre-print</p>
+      <h3>Psychological Well-being and Human-centered AI</h3>
+      <p class="sub">In these projects, my research group and I are investigating how AI systems designed to provide emotional and psychological support shape human relationships and the fundamental need for relatedness.</p>
+      <p class="read"><span>Read More <i>&rarr;</i></span></p>
+    </a>
 
-      <article class="card">
-        <svg class="art" viewBox="0 0 120 80" width="110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#38302a" fill="none" stroke-width="2.2" stroke-linecap="round">
-            <path d="M44 64 Q 24 58, 26 40 Q 28 22, 48 20 Q 66 18, 70 34 Q 84 34, 82 48 Q 80 62, 64 62 Z"/>
-            <path d="M52 40 Q 58 32, 64 40 Q 58 48, 52 40 Z"/>
-          </g>
-          <g stroke="#b98a2e" fill="none" stroke-width="2" stroke-linecap="round">
-            <path d="M96 24 v 10 M 91 29 h 10"/>
-            <path d="M20 16 v 8 M 16 20 h 8"/>
-          </g>
-        </svg>
-        <div class="tags"><span class="tag">HCAI</span><span class="tag">philosophy</span><span class="tag soon">coming soon</span></div>
-        <h3>Reconceptualizing Human&ndash;AI Experience from a Metaphysical Perspective</h3>
-        <p>Using metaphysical theories to build a taxonomy of the human&ndash;AI experience.</p>
-        <a class="go" href="projects/metaphysics.html">learn more &rarr;</a>
-      </article>
+  </div>
+  <p class="more"><a class="btn" href="projects.html">All Projects</a></p>
+</div>
+</section>
 
-    </div>
-  </section>
+<hr class="rule-wide">
 
-  <!-- ============ SELECTED WORK ============ -->
-  <section>
-    <span class="kicker">research focus: community research, learning, human&ndash;AI interaction, decision-making</span>
-    <h2>Selected Work</h2>
-    <div class="card-grid">
+<!-- ======================= GALLERY PREVIEW ======================= -->
+<section class="home-block">
+<div class="section-head reveal">
+  <h2>From the Gallery</h2>
+  <p>Painting · Drawing · Sculpture · Photography · Digital</p>
+</div>
 
-      <article class="card">
-        <svg class="art" viewBox="0 0 120 80" width="110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#38302a" fill="none" stroke-width="2.2" stroke-linecap="round">
-            <circle cx="42" cy="34" r="8"/><path d="M36 44 Q 32 54, 36 62"/>
-            <circle cx="78" cy="34" r="8"/><path d="M84 44 Q 88 54, 84 62"/>
-            <path d="M50 56 Q 60 50, 70 56"/>
-          </g>
-          <path d="M54 20 Q 60 10, 66 20" stroke="#c98d7a" fill="none" stroke-width="2" stroke-linecap="round"/>
-        </svg>
-        <div class="tags"><span class="tag">community research</span><span class="tag">storytelling</span></div>
-        <h3>Persona Driven Collaborative Storytelling (PDCS)</h3>
-        <p>Designing and evaluating PDCS through two case studies with Indian international students in the US.</p>
-        <a class="go" href="projects/pdcs.html">learn more &rarr;</a>
-      </article>
+<div class="wrap wide">
+  <div class="art-row reveal">
+    <a class="tile" href="gallery.html">
+      <img src="images/gallery/art-01.jpg" alt="Framed ink portrait of a face with a red bindi, hung on a white wall" loading="lazy">
+      <div class="veil"><span>View Gallery</span></div>
+    </a>
+    <a class="tile" href="gallery.html">
+      <img src="images/gallery/art-04.jpg" alt="Oil painting of a woman with closed eyes, leaning against a wall" loading="lazy">
+      <div class="veil"><span>View Gallery</span></div>
+    </a>
+    <a class="tile" href="gallery.html">
+      <img src="images/gallery/art-03.jpg" alt="Digital abstract artwork with sweeping arcs of orange, violet and blue over black and white brushwork" loading="lazy">
+      <div class="veil"><span>View Gallery</span></div>
+    </a>
+  </div>
+  <p class="more"><a class="btn" href="gallery.html">View Full Gallery</a></p>
+</div>
+</section>
 
-      <article class="card">
-        <svg class="art" viewBox="0 0 120 80" width="110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#38302a" fill="none" stroke-width="2.2" stroke-linecap="round">
-            <path d="M10 30 Q 40 22, 70 30 T 112 28"/>
-            <path d="M10 52 Q 40 60, 70 52 T 112 54"/>
-          </g>
-          <g stroke="#b98a2e" fill="none" stroke-width="2" stroke-linecap="round">
-            <path d="M96 28 l 10 0 M 100 23 l 6 5 -6 5"/>
-            <path d="M96 54 l 10 0 M 100 49 l 6 5 -6 5"/>
-          </g>
-        </svg>
-        <div class="tags"><span class="tag">learning</span><span class="tag">game design</span></div>
-        <h3>Transfer Learning in an Educational Parallel Programming Game</h3>
-        <p>Design evaluation of Parallel X, an NSF-funded game teaching parallel programming and concurrency concepts.</p>
-        <a class="go" href="projects/parallelx.html">learn more &rarr;</a>
-      </article>
-
-      <article class="card">
-        <svg class="art" viewBox="0 0 120 80" width="110" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-          <g stroke="#38302a" fill="none" stroke-width="2.2" stroke-linecap="round">
-            <path d="M46 62 Q 40 40, 52 22 Q 58 14, 64 22 Q 76 40, 70 62 Z"/>
-            <circle cx="58" cy="38" r="5"/>
-            <path d="M46 62 Q 42 70, 38 72 M 70 62 Q 74 70, 78 72"/>
-          </g>
-          <g stroke="#b98a2e" fill="none" stroke-width="2" stroke-linecap="round">
-            <path d="M58 66 Q 56 72, 58 76 M 52 66 Q 50 70, 52 74 M 64 66 Q 62 70, 64 74"/>
-            <path d="M92 20 v 10 M 87 25 h 10"/>
-          </g>
-        </svg>
-        <div class="tags"><span class="tag">AI</span><span class="tag">space</span><span class="tag">planning</span></div>
-        <h3>Playbook: Virtual Pilot for Space Mission Success</h3>
-        <p>An AI system supporting contingency planning for mission planners and crew members, building on NASA&rsquo;s Playbook tool.</p>
-        <a class="go" href="projects/playbook.html">learn more &rarr;</a>
-      </article>
-
-    </div>
-  </section>
-
-  <p class="quote">&ldquo;Sometimes the smallest question opens the biggest door.&rdquo;</p>
-
-  <!-- ============ PHILOSOPHY ============ -->
-  <section>
-    <h2>My Research and Design Philosophy</h2>
-    <div class="sketch" style="max-width:760px; margin:1.4rem auto;">
-      <p>
-        I believe that technology should be built <em>with</em> people, not just <em>for</em> them.
-        <strong>Co-creation, critical thinking, and care</strong> are the key components of my research and
-        design process. I love questioning assumptions, centering lived experience, and making space for
-        ambiguity and nuance &mdash; especially in spaces shaped by AI. I would love to discuss more about my work.
-      </p>
-      <p style="text-align:center; margin-top:1rem;"><a class="btn" href="contact.html">get in touch</a></p>
-    </div>
-  </section>
-
-</main>
-
+<!-- ======================= FOOTER (same on every page) ======================= -->
 <footer class="site">
-  <svg class="divider" viewBox="0 0 320 20" xmlns="http://www.w3.org/2000/svg" aria-hidden="true">
-    <path d="M4 12 Q 40 4, 80 11 T 160 10 T 240 12 T 316 8" stroke="#9c8f7f" fill="none" stroke-width="2" stroke-linecap="round"/>
-  </svg>
-  <p>&copy; 2026 Shivam Shukla &middot; Santa Clara, California, U.S.</p>
-  <p class="fine">drawn with ink, kindness, and a little tea</p>
+  <span>&copy; 2026 Shivam Shukla · All rights reserved</span>
+  <span>Santa Clara, California, U.S.</span>
 </footer>
 
-<script src="js/main.js"></script>
+<script src="js/main.js?v=20261028a"></script>
 </body>
 </html>
